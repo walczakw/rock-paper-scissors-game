@@ -1,0 +1,33 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 2560px;
+}
+
+.heading {
+    font-family: 'Righteous', cursive;
+}
+
+.game-area {
+    background-color: blanchedalmond;
+}
+
+.control-area {
+    display: flex;
+}
+
+.image-container {
+    
+}
+
+.img-container img {
+    max-width: 30%;
+    height: 30%;
+    display: block;
+}
