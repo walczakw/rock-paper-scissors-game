@@ -6,28 +6,67 @@ html {
 body {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 0 auto;
+    width: 90vw;
     max-width: 2560px;
 }
 
 .heading {
     font-family: 'Righteous', cursive;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
 }
 
 .game-area {
     background-color: blanchedalmond;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .control-area {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .image-container {
-    
+    width: 16rem;
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .img-container img {
-    max-width: 30%;
-    height: 30%;
-    display: block;
+    width: 16rem;
+    height: 16rem;
+    margin: 1rem;
+}
+
+.image-label {
+    font-size: 1.25rem;
+}
+
+.score-area {
+    display: flex;
+}
+
+.scores {
+    margin: 2rem;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.instructions {
+    font-size: 1.25rem;
+    padding: 1rem 0;
+}
+
+.instructions p {
+    margin: 0;
 }
