@@ -17,10 +17,13 @@ body {
     font-size: 3.5rem;
     letter-spacing: 2px;
     text-shadow: 0 5px 0 #ece3ae;
+    margin: 0.5rem 0;
 }
 
 .game-area {
     background-color: #ece3ae;
+    padding: 1.5rem 0;
+    border-radius: 1rem;
     width: 90vw;
     display: flex;
     flex-direction: column;
@@ -31,35 +34,38 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 2rem 0;
 }
 
 .img-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1rem;
+    margin: 1.5rem;
 }
 
 .img-container img {
-    width: 16rem;
-    height: 16rem;
+    width: 12rem;
+    height: 12rem;
 }
 
 .image-label {
     font-size: 1.25rem;
+    margin: 1rem 0;
 }
 
 .score-area {
     display: flex;
 }
 
+.score-area :first-child {
+    margin-right: 1rem;
+}
+
 .scores {
-    margin: 2rem;
     font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 0.1rem;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.189);
     border-radius: 0.25rem;
     padding: 0.75rem;
 }
@@ -68,6 +74,10 @@ body {
     font-size: 1.25rem;
     padding: 1rem 0;
     text-align: center;
+    border: 0.25rem solid #ece3ae;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    width: 90vw;
 }
 
 .instructions p {
