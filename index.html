@@ -4,11 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome and google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
     <link rel ="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <h1 class="heading">Rock Paper Scissors</h1>
+
+    <div class="game-area">
+
+        <div class="control-area">
+            <div class="img-container">
+                <img class="user-choice" src="assets/images/" alt="rock"> Rock
+            </div>
+            <div class="img-container">
+                <img class="user-choice" src="assets/images/" alt="paper"> Paper
+            </div>
+            <div class="img-container">
+                <img class="user-choice" src="assets/images/" alt="scissors"> Scissors
+            </div>
+        </div>
+
+        <div class="message-area">
+            <p class="message"></p>
+        </div>
+
+        <div class="score-area">
+            <p class="scores">USER: <span id="user-score">0</span></p>
+            <p class="scores">COMPUTER: <span id="computer-score">0</span></p>
+        </div>
+
+    </div>
+
+    <div class="instructions">
+        <p>Press Rock, Paper or Scissors to begin.</p>
+        <p>Get 5 points to win the game.</p>
+        <p>Rock defeats Scissors, Paper defeats Rock and Scissors defeats Paper.</p>
+    </div>
+
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
