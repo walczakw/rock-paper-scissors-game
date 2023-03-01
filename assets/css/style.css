@@ -83,3 +83,13 @@ body {
 .instructions p {
     margin: 0;
 }
+
+.btn {
+    background: none;
+    border: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
