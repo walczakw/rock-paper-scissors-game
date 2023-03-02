@@ -44,5 +44,17 @@ document.addEventListener("DOMContentLoaded", function() {
     let buttonPaper = document.getElementById("btn-paper");
     let buttonScissors = document.getElementById("btn-scissors");
 
+    // Add event listeners 
+    buttonRock.addEventListener('click', function() {
+        console.log("Rock button clicked");
+     });
+    buttonPaper.addEventListener('click', function() {
+        console.log("Paper button clicked");
+     });
+    buttonScissors.addEventListener('click', function() {
+        console.log("Scissors button clicked");
+     });
+
+
 });
 
