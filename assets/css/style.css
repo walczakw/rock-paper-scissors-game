@@ -18,6 +18,7 @@ body {
     letter-spacing: 2px;
     text-shadow: 0 5px 0 #ece3ae;
     margin: 0.5rem 0;
+    text-align: center;
 }
 
 .game-area {
@@ -55,6 +56,9 @@ body {
 
 .score-area {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 0.5rem;
 }
 
 .score-area :first-child {
