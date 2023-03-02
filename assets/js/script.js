@@ -34,3 +34,15 @@
 // 6. 
 // Button to restart the game?
 
+
+
+// Wait for the DOM to finish loading
+document.addEventListener("DOMContentLoaded", function() {
+
+    // Get elements
+    let buttonRock = document.getElementById("btn-rock");
+    let buttonPaper = document.getElementById("btn-paper");
+    let buttonScissors = document.getElementById("btn-scissors");
+
+});
+
