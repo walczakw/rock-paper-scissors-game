@@ -10,9 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Righteous&display=swap" rel="stylesheet">
 
-
     <link rel ="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
 </head>
 
 <body>
@@ -21,19 +20,19 @@
     <div class="game-area">
 
         <div class="control-area">
-            <button aria-label="rock" class="btn btn-rock">
+            <button aria-label="rock" class="btn" id="btn-rock">
                 <div class="img-container">
                     <img class="user-choice" src="assets/images/stone.png" alt="rock">
                     <span class="image-label">Rock</span> 
                 </div>
             </button>
-            <button aria-label="paper" class="btn btn-paper">
+            <button aria-label="paper" class="btn" id="btn-paper">
                 <div class="img-container">
                     <img class="user-choice" src="assets/images/paper-sheet.png" alt="paper"> 
                     <span class="image-label">Paper</span>
                 </div>
             </button>
-            <button aria-label="scissors" class="btn btn-scissors">
+            <button aria-label="scissors" class="btn" id="btn-scissors">
                 <div class="img-container">
                     <img class="user-choice" src="assets/images/scissors.png" alt="scissors"> 
                     <span class="image-label">Scissors</span>
@@ -41,8 +40,7 @@
             </button>
         </div>
 
-        <div class="message-area">
-            <p class="message"></p>
+        <div class="message-area" id="message">
         </div>
 
         <div class="score-area">
