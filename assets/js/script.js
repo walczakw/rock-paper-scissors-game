@@ -78,6 +78,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         computerMove();
 
+        // gameResult(userMove, computerChoice);
         gameResult();
 
      }
@@ -111,6 +112,19 @@ document.addEventListener("DOMContentLoaded", function() {
         if (userMove == choices[1] && computerChoice == choices[0]) {
             console.log("You Win!");
         }
+        else if (userMove == choices[0] && computerChoice == choices[2]) {
+            console.log("You Win!");
+        }
+        else if (userMove == choices[2] && computerChoice == choices[1]) {
+            console.log("You Win!");
+        }
+        else if (userMove == computerChoice) {
+            console.log("It's a Draw!");
+        }
+        else {
+            console.log("You Lost");
+        }
+     }
 
 
 });
