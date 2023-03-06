@@ -116,6 +116,7 @@ body {
 .btn {
     background: none;
     border: none;
+    transition: 200ms;
 }
 
 .btn:hover {
