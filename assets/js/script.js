@@ -44,7 +44,10 @@ document.addEventListener("DOMContentLoaded", function() {
     let buttonPaper = document.getElementById("btn-paper");
     let buttonScissors = document.getElementById("btn-scissors");
     let choices = ["Rock", "Paper", "Scissors"];
-    
+
+    let gameResultMessage = document.getElementById("game-result-message");
+    let userChoiceMessage = document.getElementById("user-choice-message");
+    let computerChoiceMessage = document.getElementById("computer-choice-message");
 
     // Event listeners to call out a function "buttonClicked()"
     buttonRock.addEventListener('click', function() {
@@ -64,9 +67,12 @@ document.addEventListener("DOMContentLoaded", function() {
      function buttonClicked() {
 
         computerMove();
+
+        DisplayMessage();
+
      }
 
-     
+
      function computerMove() {
 
         let randomNumber = Math.floor(Math.random() * 3);
@@ -89,6 +95,10 @@ document.addEventListener("DOMContentLoaded", function() {
         
      }
 
+
+     function DisplayMessage() {
+        userChoiceMessage.innerHTML = "test"
+     }
 
 });
 
