@@ -52,14 +52,17 @@ document.addEventListener("DOMContentLoaded", function() {
     // Event listeners to call out a function "buttonClicked()"
     buttonRock.addEventListener('click', function() {
         console.log("user: " + choices[0])
+        userChoiceMessage.innerHTML = "Your move: " + choices[0];
         buttonClicked();
      });
     buttonPaper.addEventListener('click', function() {
         console.log("user: " + choices[1])
+        userChoiceMessage.innerHTML = "Your move: " + choices[1];
         buttonClicked();
      });
     buttonScissors.addEventListener('click', function() {
         console.log("user: " + choices[2])
+        userChoiceMessage.innerHTML = "Your move: " + choices[2];
         buttonClicked();
      });
 
@@ -68,7 +71,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
         computerMove();
 
-        DisplayMessage();
 
      }
 
@@ -93,12 +95,11 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log("computer choice: " + computerChoice);
         }
         
+        computerChoiceMessage.innerHTML = "Computer move: " + computerChoice;
      }
 
 
-     function DisplayMessage() {
-        userChoiceMessage.innerHTML = "test"
-     }
+
 
 });
 
