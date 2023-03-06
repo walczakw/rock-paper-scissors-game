@@ -77,25 +77,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
         userChoiceMessage.innerHTML = "Your move: " + userMove;
 
-        computerMove();
-
-        gameResult();
-
-     }
-
-
-     function computerMove() {
-
         let randomNumber = Math.floor(Math.random() * 3);
         console.log("random number: " + randomNumber);
         
         let computerChoice = randomNumber;
 
-        if (randomNumber == 0) {
+        computerMove(computerChoice);
+
+        gameResult(userMove, computerMove);
+
+     }
+
+
+     function computerMove(computerChoice) {
+
+        if (computerChoice == 0) {
             computerChoice = choices[0];
             console.log("computer choice: " + computerChoice);
         }
-        else if (randomNumber == 1) {
+        else if (computerChoice == 1) {
             computerChoice = choices[1];
             console.log("computer choice: " + computerChoice);
         }
@@ -108,20 +108,20 @@ document.addEventListener("DOMContentLoaded", function() {
      }
 
 
-     function gameResult(userMove, computerChoice) {
-        if (userMove == choices[1] && computerChoice == choices[0]) {
+     function gameResult(userMove, computerMove) {
+        if (userMove == choices[1] && computerMove == choices[0]) {
             console.log("You Win!");
             eachRoundResultMessage.innerHTML = "You Win!";
         }
-        else if (userMove == choices[0] && computerChoice == choices[2]) {
+        else if (userMove == choices[0] && computerMove == choices[2]) {
             console.log("You Win!");
             eachRoundResultMessage.innerHTML = "You Win!";
         }
-        else if (userMove == choices[2] && computerChoice == choices[1]) {
+        else if (userMove == choices[2] && computerMove == choices[1]) {
             console.log("You Win!");
             eachRoundResultMessage.innerHTML = "You Win!";
         }
-        else if (userMove == computerChoice) {
+        else if (userMove == computerMove) {
             console.log("It's a Draw!");
             eachRoundResultMessage.innerHTML = "It's a Draw!";
         }
