@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
      function buttonClicked(userMove) {
 
-        userChoiceMessage.innerHTML = "Your move: " + userMove;
+        userChoiceMessage.innerHTML = "Your move:  " + userMove;
 
         let randomNumber = Math.floor(Math.random() * 3);
         console.log("random number: " + randomNumber);
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log("computer choice: " + computerChoice);
         }
         
-        computerChoiceMessage.innerHTML = "Computer move: " + computerChoice;
+        computerChoiceMessage.innerHTML = "Computer move:  " + computerChoice;
      }
 
 

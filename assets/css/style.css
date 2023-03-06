@@ -54,6 +54,19 @@ body {
     margin: 1rem 0;
 }
 
+.message-area .game-result {
+    font-weight: bolder;
+}
+
+.message-area .round-result {
+    font-weight: bolder;
+}
+
+.message-area p {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
 .score-area {
     display: flex;
     flex-wrap: wrap;
