@@ -84,7 +84,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
         computerMove(computerChoice);
 
-        gameResult(userMove, computerMove);
+        gameResult(userMove, computerChoice);
+
+
 
      }
 
@@ -108,20 +110,21 @@ document.addEventListener("DOMContentLoaded", function() {
      }
 
 
-     function gameResult(userMove, computerMove) {
-        if (userMove == choices[1] && computerMove == choices[0]) {
+    function gameResult(userMove, computerChoice) {
+
+        if (userMove == choices[1] && choices[computerChoice] == choices[0]) {
             console.log("You Win!");
             eachRoundResultMessage.innerHTML = "You Win!";
         }
-        else if (userMove == choices[0] && computerMove == choices[2]) {
+        else if (userMove == choices[0] && choices[computerChoice] == choices[2]) {
             console.log("You Win!");
             eachRoundResultMessage.innerHTML = "You Win!";
         }
-        else if (userMove == choices[2] && computerMove == choices[1]) {
+        else if (userMove == choices[2] && choices[computerChoice] == choices[1]) {
             console.log("You Win!");
             eachRoundResultMessage.innerHTML = "You Win!";
         }
-        else if (userMove == computerMove) {
+        else if (userMove == choices[computerChoice]) {
             console.log("It's a Draw!");
             eachRoundResultMessage.innerHTML = "It's a Draw!";
         }
