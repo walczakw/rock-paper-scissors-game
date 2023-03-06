@@ -1,3 +1,4 @@
+/* GLOBAL */
 html {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -12,6 +13,7 @@ body {
     max-width: 2560px;
 }
 
+/* HEADER */
 .heading {
     font-family: 'Righteous', cursive;
     font-size: 3.5rem;
@@ -21,6 +23,7 @@ body {
     text-align: center;
 }
 
+/* GAME AREA */
 .game-area {
     background-color: #ece3ae;
     padding: 1.5rem 0;
@@ -31,6 +34,7 @@ body {
     align-items: center;
 }
 
+/* Control Area */
 .control-area {
     display: flex;
     justify-content: center;
@@ -54,6 +58,7 @@ body {
     margin: 1rem 0;
 }
 
+/* Message area */
 .message-area .game-result {
     font-weight: bolder;
 }
@@ -67,6 +72,7 @@ body {
     margin: 0;
 }
 
+/* Score area */
 .score-area {
     display: flex;
     flex-wrap: wrap;
@@ -87,6 +93,7 @@ body {
     padding: 0.75rem;
 }
 
+/* FOOTER */
 .instructions {
     font-size: 1.25rem;
     padding: 1rem 0;
