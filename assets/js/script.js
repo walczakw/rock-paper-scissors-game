@@ -58,9 +58,29 @@ document.addEventListener("DOMContentLoaded", function() {
      });
 
      function buttonClicked() {
-        const randomNumber = Math.floor(Math.random() * 3);
+        computerMove();
+     }
+
+     function computerMove(computerChoice) {
+
+        let randomNumber = Math.floor(Math.random() * 3);
         console.log("computer: " + randomNumber);
-      
+        
+        let computerChoice = randomNumber;
+        
+        if (randomNumber == 0) {
+            computerChoice = choices[0];
+            console.log(computerChoice);
+        }
+        else if (randomNumber == 1) {
+            computerChoice = choices[1];
+            console.log(computerChoice);
+        }
+        else {
+            computerChoice = choices[2];
+            console.log(computerChoice);
+        }
+        
      }
 
 
