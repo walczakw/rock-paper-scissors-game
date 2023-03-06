@@ -78,6 +78,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         computerMove();
 
+        gameResult();
+
      }
 
 
@@ -105,6 +107,10 @@ document.addEventListener("DOMContentLoaded", function() {
      }
 
 
+     function gameResult(userMove, computerChoice) {
+        if (userMove == choices[1] && computerChoice == choices[0]) {
+            console.log("You Win!");
+        }
 
 
 });
