@@ -36,24 +36,32 @@
 
 
 
-// Wait for the DOM to finish loading
+// Waiting for the DOM to finish loading
 document.addEventListener("DOMContentLoaded", function() {
 
-    // Get elements
+    // Getting elements
     let buttonRock = document.getElementById("btn-rock");
     let buttonPaper = document.getElementById("btn-paper");
     let buttonScissors = document.getElementById("btn-scissors");
+    let choices = ["btn-rock", "btn-paper", "btn-scissors"];
+    
 
-    // Add event listeners 
+    // Event listeners to call out a function "buttonClicked()"
     buttonRock.addEventListener('click', function() {
-        console.log("Rock button clicked");
+        buttonClicked();
      });
     buttonPaper.addEventListener('click', function() {
-        console.log("Paper button clicked");
+        buttonClicked();
      });
     buttonScissors.addEventListener('click', function() {
-        console.log("Scissors button clicked");
+        buttonClicked();
      });
+
+     function buttonClicked() {
+        const randomNumber = Math.floor(Math.random() * 3);
+        console.log("computer: " + randomNumber);
+      
+     }
 
 
 });
