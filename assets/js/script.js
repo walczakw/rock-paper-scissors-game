@@ -60,11 +60,13 @@ document.addEventListener("DOMContentLoaded", function() {
         buttonClicked();
      });
 
+    
      function buttonClicked() {
 
         computerMove();
      }
 
+     
      function computerMove() {
 
         let randomNumber = Math.floor(Math.random() * 3);
