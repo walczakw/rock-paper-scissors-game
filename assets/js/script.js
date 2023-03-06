@@ -43,42 +43,46 @@ document.addEventListener("DOMContentLoaded", function() {
     let buttonRock = document.getElementById("btn-rock");
     let buttonPaper = document.getElementById("btn-paper");
     let buttonScissors = document.getElementById("btn-scissors");
-    let choices = ["btn-rock", "btn-paper", "btn-scissors"];
+    let choices = ["Rock", "Paper", "Scissors"];
     
 
     // Event listeners to call out a function "buttonClicked()"
     buttonRock.addEventListener('click', function() {
+        console.log("user: " + choices[0])
         buttonClicked();
      });
     buttonPaper.addEventListener('click', function() {
+        console.log("user: " + choices[1])
         buttonClicked();
      });
     buttonScissors.addEventListener('click', function() {
+        console.log("user: " + choices[2])
         buttonClicked();
      });
 
      function buttonClicked() {
+
         computerMove();
      }
 
-     function computerMove(computerChoice) {
+     function computerMove() {
 
         let randomNumber = Math.floor(Math.random() * 3);
-        console.log("computer: " + randomNumber);
+        console.log("random number: " + randomNumber);
         
         let computerChoice = randomNumber;
-        
+
         if (randomNumber == 0) {
             computerChoice = choices[0];
-            console.log(computerChoice);
+            console.log("computer choice: " + computerChoice);
         }
         else if (randomNumber == 1) {
             computerChoice = choices[1];
-            console.log(computerChoice);
+            console.log("computer choice: " + computerChoice);
         }
         else {
             computerChoice = choices[2];
-            console.log(computerChoice);
+            console.log("computer choice: " + computerChoice);
         }
         
      }
