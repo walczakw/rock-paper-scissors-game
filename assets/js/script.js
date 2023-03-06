@@ -53,7 +53,6 @@ document.addEventListener("DOMContentLoaded", function() {
     // Event listeners to call out a function "buttonClicked()"
     buttonRock.addEventListener('click', function() {
         console.log("user: " + choices[0])
-        userChoiceMessage.innerHTML = "Your move: " + choices[0];
 
         let userMove = choices[0];
         buttonClicked(userMove);
@@ -61,14 +60,12 @@ document.addEventListener("DOMContentLoaded", function() {
      
     buttonPaper.addEventListener('click', function() {
         console.log("user: " + choices[1])
-        userChoiceMessage.innerHTML = "Your move: " + choices[1];
 
         let userMove = choices[1];
         buttonClicked(userMove);
      });
     buttonScissors.addEventListener('click', function() {
         console.log("user: " + choices[2])
-        userChoiceMessage.innerHTML = "Your move: " + choices[2];
 
         let userMove = choices[2];
         buttonClicked(userMove);
@@ -76,9 +73,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     
      function buttonClicked(userMove) {
+
+        userChoiceMessage.innerHTML = "Your move: " + userMove;
+
         computerMove();
 
-        console.log(userMove);
      }
 
 
