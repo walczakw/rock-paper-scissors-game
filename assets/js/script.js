@@ -49,29 +49,36 @@ document.addEventListener("DOMContentLoaded", function() {
     let userChoiceMessage = document.getElementById("user-choice-message");
     let computerChoiceMessage = document.getElementById("computer-choice-message");
 
+
     // Event listeners to call out a function "buttonClicked()"
     buttonRock.addEventListener('click', function() {
         console.log("user: " + choices[0])
         userChoiceMessage.innerHTML = "Your move: " + choices[0];
-        buttonClicked();
+
+        let userMove = choices[0];
+        buttonClicked(userMove);
      });
+     
     buttonPaper.addEventListener('click', function() {
         console.log("user: " + choices[1])
         userChoiceMessage.innerHTML = "Your move: " + choices[1];
-        buttonClicked();
+
+        let userMove = choices[1];
+        buttonClicked(userMove);
      });
     buttonScissors.addEventListener('click', function() {
         console.log("user: " + choices[2])
         userChoiceMessage.innerHTML = "Your move: " + choices[2];
-        buttonClicked();
+
+        let userMove = choices[2];
+        buttonClicked(userMove);
      });
 
     
-     function buttonClicked() {
-
+     function buttonClicked(userMove) {
         computerMove();
 
-
+        console.log(userMove);
      }
 
 
