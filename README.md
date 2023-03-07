@@ -5,6 +5,7 @@
 
 The “Rock Paper Scissors Game” is a simple, web browser game.
 It allows users to play with a computer.
+
 The game is fully responsive and can be played on different screen sizes.
 
 [View the live project here](https://walczakw.github.io/rock-paper-scissors-game/)
@@ -50,6 +51,7 @@ The game is fully responsive and can be played on different screen sizes.
 - The code in the JavaScript file could benefit from some refactoring. For example, event listeners for each button could be added by looping over 'choices' array.
 
 
+
 ## Testing 
 
 - The whole website was tested after finishing the development.
@@ -62,5 +64,4 @@ The game is fully responsive and can be played on different screen sizes.
 ### Testing Responsiveness 
 - The website was tested for responsiveness using Google Chrome Dev Tools and picking different screen widths and different mobile and tablet devices.
 - The 'Rock Paper Scissors' game is fully responsive from the screen width 280px as a minimum (eg. Samsung Galaxy Fold).
-
 
