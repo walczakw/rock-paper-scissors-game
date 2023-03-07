@@ -12,6 +12,25 @@ The game is fully responsive and can be played on different screen sizes.
 
 ![Responsive Mockup](https://github.com/walczakw/rock-paper-scissors-game/blob/main/docs/readme-images/responsive-mockup.png)
 
+
+
+## Index
+
+1. [**Introduction**](#introduction)
+2. [**Features**](#features)
+    * [***Existing Features***](#existing-features)
+    * [***Features Left to Implement and Possible Improvements***](#features-left-to-implement-and-possible-improvements)
+3. [**Testing**](#testing)
+    * [***Testing Responsiveness***](#testing-responsiveness)
+    * [***Validator Testing***](#validator-testing)
+4. [**Deployment**](#deployment)
+5. [**Credits**](#credits)
+    * [***Content***](#content)
+    * [***Media***](#media)
+    * [***General Reference***](#general-reference)
+
+
+
 ## Features 
 
 ### Existing Features
@@ -93,4 +112,28 @@ The live link can be found here - https://walczakw.github.io/rock-paper-scissors
 
 Alternatively, a local copy of this repository can be made by pasting the code below into a terminal:
   - `git clone https://github.com/walczakw/rock-paper-scissors-game.git`
+
+
+
+## Credits 
+
+### Content 
+- The website mockup for the README was generated using [techsini.com](https://techsini.com/multi-mockup/)
+- The fonts used were imported from [Google Fonts](https://fonts.google.com/)
+
+### Media
+- The images used were taken from the open source site [pngimg.com](https://pngimg.com/)
+- Images were compressed using [TinyPNG](https://tinypng.com/)
+
+### General Reference
+- During development process the following resources were used for reference when additional information was needed:
+  - HTML, CSS and JavaScript advice:
+    - [MDN](https://developer.mozilla.org/en-US/)
+    - [w3schools](https://www.w3schools.com/)
+  - Font size guidelines:
+    - [learnui.design](https://learnui.design/blog/mobile-desktop-website-font-size-guidelines.html)
+- The following videos were watched for an inspiration on different ways to tackle 'rock, paper, scissors' game:
+  - Ania Kubow - "3 ways to code Rock Paper Scissors in JavaScript" [video](https://www.youtube.com/watch?v=RwFeg0cEZvQ)
+  - Web Dev Simplified - "How To Code Rock Paper Scissors In JavaScript" [video](https://www.youtube.com/watch?v=1yS-JV4fWqY)
+  
 
