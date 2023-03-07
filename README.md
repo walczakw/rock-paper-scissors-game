@@ -82,3 +82,15 @@ The following validator tools were used:
 
 
 
+## Deployment
+
+The site was deployed to GitHub Pages by following the steps below:
+  1. In the GitHub repository, navigate to the Settings tab and then click on 'Pages' (from the menu on the left)
+  2. From the 'Branch' section drop-down menu (under 'Build and deployment') select the 'master' branch' and click 'Save'
+  3. Once the site has been deployed, the link to it will be displayed at the top of the page (GitHub Pages section) with the information: "Your site is live at..."
+
+The live link can be found here - https://walczakw.github.io/rock-paper-scissors-game/
+
+Alternatively, a local copy of this repository can be made by pasting the code below into a terminal:
+  - `git clone https://github.com/walczakw/rock-paper-scissors-game.git`
+
