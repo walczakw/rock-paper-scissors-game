@@ -65,3 +65,20 @@ The game is fully responsive and can be played on different screen sizes.
 - The website was tested for responsiveness using Google Chrome Dev Tools and picking different screen widths and different mobile and tablet devices.
 - The 'Rock Paper Scissors' game is fully responsive from the screen width 280px as a minimum (eg. Samsung Galaxy Fold).
 
+### Validator Testing
+The following validator tools were used:
+- HTML:
+  - No errors were returned when passing through the official [W3 validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwalczakw.github.io%2Frock-paper-scissors-game%2F)
+- CSS:
+  - No errors were found when passing through the official [Jigsaw validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwalczakw.github.io%2Frock-paper-scissors-game%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+- Accessibility:
+  - No errors were found when passing through the official [WAVE validator](https://wave.webaim.org/report#/https://walczakw.github.io/rock-paper-scissors-game/)
+- JavaScript:
+  - No errors were found when passing through the official [JSHint validator](https://jshint.com/)
+- Performance:
+  - The performance was tested using 'Lighthouse validator' in Google Chrome Dev Tools in 'Incognito' mode.
+ 
+![Lighthouse validator](https://github.com/walczakw/rock-paper-scissors-game/blob/main/docs/readme-images/lighthouse-validator.png)
+
+
+
