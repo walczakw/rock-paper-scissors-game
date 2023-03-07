@@ -4,11 +4,12 @@
 ## Introduction
 
 The “Rock Paper Scissors Game” is a simple, web browser game.
-It allows user to play with a computer.
-
-![Responsive Mockup](https://github.com/walczakw/rock-paper-scissors-game/blob/main/docs/readme-images/responsive-mockup.png)
+It allows users to play with a computer.
+The game is fully responsive and can be played on different screen sizes.
 
 [View the live project here](https://walczakw.github.io/rock-paper-scissors-game/)
+
+![Responsive Mockup](https://github.com/walczakw/rock-paper-scissors-game/blob/main/docs/readme-images/responsive-mockup.png)
 
 ## Features 
 
@@ -16,7 +17,7 @@ It allows user to play with a computer.
 
 - __Header__
 
-  - The header features the game name displayed in a two-colorded bold font.
+  - The header features the game name displayed in a two-colored bold font.
   - This allows the user to be instantly informed which game they are going to play.
 
 ![Header](https://github.com/walczakw/rock-paper-scissors-game/blob/main/docs/readme-images/header.png)
@@ -32,9 +33,9 @@ It allows user to play with a computer.
 
 - __Results area after user interaction__
 
-  - After user clicks on one of three pictures the game starts and the results area will be displayed.
+  - After the user clicks on one of three pictures the game starts and the results area will be displayed.
   - The results area will show the user a message informing them who won each round.
-  - The message will also display what was the user and computer move (The computer move if generated randomly inside JavaScript code).
+  - The message will also display what was the user and computer move (The computer move is generated randomly inside JavaScript code).
   - The score for the user and computer will be updated after each round.
 
 ![Results area](https://github.com/walczakw/rock-paper-scissors-game/blob/main/docs/readme-images/results-area.png)
@@ -48,4 +49,6 @@ It allows user to play with a computer.
 ![Footer](https://github.com/walczakw/rock-paper-scissors-game/blob/main/docs/readme-images/footer.png)
 
 
-
+### Features Left to Implement and Possible Improvements
+- The game could end after the user or computer reaches a score of '5'. The game result could then be displayed as a pop up window together with a 'Play Again' button to restart the game.
+- The code in the JavaScript file could benefit from some refactoring. For example, event listeners for each button could be added by looping over 'choices' array.
