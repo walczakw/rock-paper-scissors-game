@@ -1,7 +1,8 @@
 // Waiting for the DOM to finish loading
 document.addEventListener("DOMContentLoaded", function() {
 
-    // Getting elements
+
+    // Getting elements and defining variables
     let buttonRock = document.getElementById("btn-rock");
     let buttonPaper = document.getElementById("btn-paper");
     let buttonScissors = document.getElementById("btn-scissors");
@@ -14,104 +15,79 @@ document.addEventListener("DOMContentLoaded", function() {
     let userScore = 0;
     let computerScore = 0;
 
+
     // Event listeners to call out a function "buttonClicked()"
     buttonRock.addEventListener('click', function() {
-        console.log("user: " + choices[0])
-
         let userMove = choices[0];
         buttonClicked(userMove);
      });
-     
-    buttonPaper.addEventListener('click', function() {
-        console.log("user: " + choices[1])
 
+    buttonPaper.addEventListener('click', function() {
         let userMove = choices[1];
         buttonClicked(userMove);
      });
-    buttonScissors.addEventListener('click', function() {
-        console.log("user: " + choices[2]);
 
+    buttonScissors.addEventListener('click', function() {
         let userMove = choices[2];
         buttonClicked(userMove);
      });
 
-    
+
+    //  Function for displaying user choice and randomly select and display computer choice
+    //  Also to display result (Win, Lost or Draw)
      function buttonClicked(userMove) {
 
         userChoiceMessage.innerHTML = "Your move:  " + userMove;
 
-        let randomNumber = Math.floor(Math.random() * 3);
-        console.log("random number: " + randomNumber);
-        
+        let randomNumber = Math.floor(Math.random() * 3);        
         let computerChoice = randomNumber;
 
         computerMove(computerChoice);
 
         gameResult(userMove, computerChoice);
-
      }
 
-
+     // Assining computer random number to one of the choices in an array
      function computerMove(computerChoice) {
 
         if (computerChoice == 0) {
             computerChoice = choices[0];
-            console.log("computer choice: " + computerChoice);
         }
         else if (computerChoice == 1) {
             computerChoice = choices[1];
-            console.log("computer choice: " + computerChoice);
         }
         else {
             computerChoice = choices[2];
-            console.log("computer choice: " + computerChoice);
         }
         
         computerChoiceMessage.innerHTML = "Computer move:  " + computerChoice;
-
      }
 
-
+    // Setting rules for game results (Win, Lost or Draw) and incrementing scores
     function gameResult(userMove, computerChoice) {
 
         if (userMove == choices[1] && choices[computerChoice] == choices[0]) {
-            console.log("You Win!");
             eachRoundResultMessage.innerHTML = "You Win!";
             userScore++;
-            console.log("user score: " + userScore);
-            console.log("computer score: " + computerScore);
         }
         else if (userMove == choices[0] && choices[computerChoice] == choices[2]) {
-            console.log("You Win!");
             eachRoundResultMessage.innerHTML = "You Win!";
             userScore++;
-            console.log("user score: " + userScore);
-            console.log("computer score: " + computerScore);
         }
         else if (userMove == choices[2] && choices[computerChoice] == choices[1]) {
-            console.log("You Win!");
             eachRoundResultMessage.innerHTML = "You Win!";
             userScore++;
-            console.log("user score: " + userScore);
-            console.log("computer score: " + computerScore);
         }
         else if (userMove == choices[computerChoice]) {
-            console.log("It's a Draw!");
             eachRoundResultMessage.innerHTML = "It's a Draw!";
-            console.log("user score: " + userScore);
-            console.log("computer score: " + computerScore);
         }
         else {
-            console.log("You Lost");
             eachRoundResultMessage.innerHTML = "You Lost!";
             computerScore++;
-            console.log("user score: " + userScore);
-            console.log("computer score: " + computerScore);
         }
 
         document.getElementById("user-score").innerText = userScore;
         document.getElementById("computer-score").innerText = computerScore;
      }
-
 });
 
