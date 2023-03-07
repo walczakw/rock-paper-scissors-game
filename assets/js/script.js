@@ -114,36 +114,40 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     function gameResult(userMove, computerChoice) {
-        // console.log(userScore);
-        // console.log(computerScore);
 
         if (userMove == choices[1] && choices[computerChoice] == choices[0]) {
             console.log("You Win!");
             eachRoundResultMessage.innerHTML = "You Win!";
-            return userScore++;
-            console.log(userScore);
+            userScore.innerHTML = userScore++;
+            console.log("user score: " + userScore);
+            console.log("computer score: " + computerScore);
         }
         else if (userMove == choices[0] && choices[computerChoice] == choices[2]) {
             console.log("You Win!");
             eachRoundResultMessage.innerHTML = "You Win!";
-            return userScore++;
-            console.log(userScore);
+            userScore.innerHTML = userScore++;
+            console.log("user score: " + userScore);
+            console.log("computer score: " + computerScore);
         }
         else if (userMove == choices[2] && choices[computerChoice] == choices[1]) {
             console.log("You Win!");
             eachRoundResultMessage.innerHTML = "You Win!";
-            return userScore++;
-            console.log(userScore);
+            userScore.innerHTML = userScore++;
+            console.log("user score: " + userScore);
+            console.log("computer score: " + computerScore);
         }
         else if (userMove == choices[computerChoice]) {
             console.log("It's a Draw!");
             eachRoundResultMessage.innerHTML = "It's a Draw!";
+            console.log("user score: " + userScore);
+            console.log("computer score: " + computerScore);
         }
         else {
             console.log("You Lost");
             eachRoundResultMessage.innerHTML = "You Lost!";
-            return computerScore++;
-            console.log(computerScore);
+            computerScore.innerHTML = computerScore++;
+            console.log("user score: " + userScore);
+            console.log("computer score: " + computerScore);
         }
      }
 
