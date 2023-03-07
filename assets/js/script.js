@@ -7,16 +7,12 @@ document.addEventListener("DOMContentLoaded", function() {
     let buttonScissors = document.getElementById("btn-scissors");
     let choices = ["Rock", "Paper", "Scissors"];
 
-    let userScore = document.getElementById("user-score");
-    let computerScore = document.getElementById("computer-score");
-    userScore = 0;
-    computerScore = 0;
-
-    let gameResultMessage = document.getElementById("game-result-message");
     let eachRoundResultMessage = document.getElementById("each-round-result-message");
     let userChoiceMessage = document.getElementById("user-choice-message");
     let computerChoiceMessage = document.getElementById("computer-choice-message");
 
+    userScore = 0;
+    computerScore = 0;
 
     // Event listeners to call out a function "buttonClicked()"
     buttonRock.addEventListener('click', function() {
@@ -72,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         
         computerChoiceMessage.innerHTML = "Computer move:  " + computerChoice;
+
      }
 
 
@@ -80,21 +77,21 @@ document.addEventListener("DOMContentLoaded", function() {
         if (userMove == choices[1] && choices[computerChoice] == choices[0]) {
             console.log("You Win!");
             eachRoundResultMessage.innerHTML = "You Win!";
-            userScore.innerHTML = userScore++;
+            userScore++;
             console.log("user score: " + userScore);
             console.log("computer score: " + computerScore);
         }
         else if (userMove == choices[0] && choices[computerChoice] == choices[2]) {
             console.log("You Win!");
             eachRoundResultMessage.innerHTML = "You Win!";
-            userScore.innerHTML = userScore++;
+            userScore++;
             console.log("user score: " + userScore);
             console.log("computer score: " + computerScore);
         }
         else if (userMove == choices[2] && choices[computerChoice] == choices[1]) {
             console.log("You Win!");
             eachRoundResultMessage.innerHTML = "You Win!";
-            userScore.innerHTML = userScore++;
+            userScore++;
             console.log("user score: " + userScore);
             console.log("computer score: " + computerScore);
         }
@@ -107,12 +104,14 @@ document.addEventListener("DOMContentLoaded", function() {
         else {
             console.log("You Lost");
             eachRoundResultMessage.innerHTML = "You Lost!";
-            computerScore.innerHTML = computerScore++;
+            computerScore++;
             console.log("user score: " + userScore);
             console.log("computer score: " + computerScore);
         }
-     }
 
+        document.getElementById("user-score").innerText = userScore;
+        document.getElementById("computer-score").innerText = computerScore;
+     }
 
 });
 
