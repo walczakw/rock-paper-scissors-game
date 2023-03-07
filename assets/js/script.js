@@ -45,6 +45,11 @@ document.addEventListener("DOMContentLoaded", function() {
     let buttonScissors = document.getElementById("btn-scissors");
     let choices = ["Rock", "Paper", "Scissors"];
 
+    let userScore = document.getElementById("user-score");
+    let computerScore = document.getElementById("computer-score");
+    userScore = 0;
+    computerScore = 0;
+
     let gameResultMessage = document.getElementById("game-result-message");
     let eachRoundResultMessage = document.getElementById("each-round-result-message");
     let userChoiceMessage = document.getElementById("user-choice-message");
@@ -86,8 +91,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
         gameResult(userMove, computerChoice);
 
-
-
      }
 
 
@@ -111,18 +114,26 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     function gameResult(userMove, computerChoice) {
+        // console.log(userScore);
+        // console.log(computerScore);
 
         if (userMove == choices[1] && choices[computerChoice] == choices[0]) {
             console.log("You Win!");
             eachRoundResultMessage.innerHTML = "You Win!";
+            return userScore++;
+            console.log(userScore);
         }
         else if (userMove == choices[0] && choices[computerChoice] == choices[2]) {
             console.log("You Win!");
             eachRoundResultMessage.innerHTML = "You Win!";
+            return userScore++;
+            console.log(userScore);
         }
         else if (userMove == choices[2] && choices[computerChoice] == choices[1]) {
             console.log("You Win!");
             eachRoundResultMessage.innerHTML = "You Win!";
+            return userScore++;
+            console.log(userScore);
         }
         else if (userMove == choices[computerChoice]) {
             console.log("It's a Draw!");
@@ -131,6 +142,8 @@ document.addEventListener("DOMContentLoaded", function() {
         else {
             console.log("You Lost");
             eachRoundResultMessage.innerHTML = "You Lost!";
+            return computerScore++;
+            console.log(computerScore);
         }
      }
 
