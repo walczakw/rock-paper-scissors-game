@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function() {
     let userChoiceMessage = document.getElementById("user-choice-message");
     let computerChoiceMessage = document.getElementById("computer-choice-message");
 
-    userScore = 0;
-    computerScore = 0;
+    let userScore = 0;
+    let computerScore = 0;
 
     // Event listeners to call out a function "buttonClicked()"
     buttonRock.addEventListener('click', function() {
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
         buttonClicked(userMove);
      });
     buttonScissors.addEventListener('click', function() {
-        console.log("user: " + choices[2])
+        console.log("user: " + choices[2]);
 
         let userMove = choices[2];
         buttonClicked(userMove);
